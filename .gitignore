@@ -35,3 +35,81 @@ override.tf.json
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
+# ----------------------------
+# AWS Credentials & Configs
+# ----------------------------
+*.pem
+*.key
+*.crt
+.aws/
+aws-credentials.json
+*.tfvars
+*.tfvars.json
+secrets.auto.tfvars
+*.bak
+*.backup
+*.zip
+
+# ----------------------------
+# Jenkins
+# ----------------------------
+/workspace/
+/builds/
+/jobs/
+/logs/
+*.log
+/tmp/
+/target/
+/*.iml
+*.swp
+*.bak
+
+# Jenkins secrets or config
+secrets/
+*.credentials
+*.config.xml
+
+# ----------------------------
+# GitHub Actions
+# ----------------------------
+# Logs and cache files
+/actions-runner/
+/.github/workflows/.cache/
+/.github/actions/.cache/
+/.github/actions/tmp/
+
+# Local runner config
+.env
+.env.*
+*.secret
+
+# ----------------------------
+# Node.js / Frontend (if applicable)
+# ----------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dist/
+build/
+
+# ----------------------------
+# Python (if applicable)
+# ----------------------------
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# ----------------------------
+# System / IDE
+# ----------------------------
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
